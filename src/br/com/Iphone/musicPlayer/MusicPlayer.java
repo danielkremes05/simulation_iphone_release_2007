@@ -1,18 +1,18 @@
 package br.com.Iphone.musicPlayer;
 
-public class MusciPlayer {
+public interface MusicPlayer {
 //    Methods: play(), pause(), selectMusic(String music)
 
-    public void play() {
-        
+    public default void play(String music) {
+        System.out.println("Play song" + music);
     }
 
-    public void pause() {
-
+    public default void pause() {
+        System.out.println("Pause song");
     }
 
-    public void selectMusic() {
-
+    public default void selectMusic() {
+        System.out.println("Select music ");
     }
 
 }
